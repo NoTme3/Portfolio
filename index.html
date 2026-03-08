@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kailaas - Penetration Tester | Ethical Hacker</title>
+    <meta name="description" content="Portfolio of Kailaas, Penetration Tester at Innspark Solutions. eJPT certified, specializing in ethical hacking and offensive security.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="grid-background"></div>
+
+    <nav class="navbar">
+        <div class="logo">Kailaas<span class="cursor">_</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-item">/home</a></li>
+            <li><a href="#skills" class="nav-item">/skills</a></li>
+            <li><a href="#tools" class="nav-item">/tools</a></li>
+            <li><a href="#projects" class="nav-item">/projects</a></li>
+            <li><a href="#achievements" class="nav-item">/achievements</a></li>
+            <li><a href="#contact" class="nav-item">/contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-content">
+                <p class="greeting">> Hello, World. I am</p>
+                <h1 class="glitch" data-text="Kailaas">Kailaas</h1>
+                <h2 class="role">Penetration Tester <span class="highlight">@Innspark Solutions</span></h2>
+                <p class="bio">Passionate about ethical hacking and offensive security. Computer Science graduate from <strong>Lovely Professional University</strong>. Currently working as a <strong>Penetration Tester @ Innspark</strong>, navigating the cyber realm as an <strong>eJPT</strong> certified professional and active <strong>Bug Bounty Hunter</strong>.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">> View_Projects</a>
+                    <a href="#contact" class="btn secondary-btn">> Contact_Me</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-min"></span>
+                            <span class="btn-max"></span>
+                        </div>
+                        <div class="terminal-title">kailaas@kali: ~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="cmd"><span class="prompt">root@kali:~#</span> whoami</p>
+                        <p class="cmd-out">kailaas</p>
+                        <br>
+                        <p class="cmd"><span class="prompt">root@kali:~#</span> cat bio.txt</p>
+                        <p class="cmd-out">> Penetration Tester @ Innspark Solutions</p>
+                        <p class="cmd-out">> Securing the global perimeter...</p>
+                        <br>
+                        <p class="cmd"><span class="prompt">root@kali:~#</span> <span id="typing-text"></span><span class="blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title"><span class="slash">/</span> Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-network-wired skill-icon"></i>
+                    <h3>Network Pentesting</h3>
+                    <p>Comprehensive vulnerability assessment, structured exploitation methodologies, and lateral movement in enterprise networks.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bug skill-icon"></i>
+                    <h3>Web App Security</h3>
+                    <p>Testing for OWASP Top 10 vulnerabilities, complex manual exploitation, logic flaws, and secure code review.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt skill-icon"></i>
+                    <h3>Offensive Security</h3>
+                    <p>Simulating persistent threats, red teaming engagements, AD attacks, privilege escalation, and custom tooling.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-user-secret skill-icon"></i>
+                    <h3>Ethical Hacking</h3>
+                    <p>Authorized attacks to fortify defenses, risk assessment, social engineering tactics, and comprehensive reporting.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch skill-icon"></i>
+                    <h3>Source Code Analysis</h3>
+                    <p>Static and Dynamic Application Security Testing (SAST/DAST) to identify logical and cryptographic flaws in native applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title"><span class="slash">/</span> Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-type">Bug Bounty</div>
+                        <h3 class="project-title">YouTube iOS Ad Bypass</h3>
+                        <p class="project-desc">Discovered and reported a severe logic bug in the YouTube iOS application that allowed bypassing non-skippable ads. Escalated to the Google Trust & Safety team.</p>
+                        <ul class="project-tech">
+                            <li>Responsible Disclosure</li>
+                            <li>Mobile App Sec</li>
+                            <li>Logic Flaws</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="Details"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-type">Bug Bounty</div>
+                        <h3 class="project-title">Cashback Feature Vulnerability</h3>
+                        <p class="project-desc">Identified and documented a critical business logic flaw in a cashback tracking system, allowing potential financial manipulation and unauthorized redemptions.</p>
+                        <ul class="project-tech">
+                            <li>Web App Sec</li>
+                            <li>Business Logic</li>
+                            <li>OWASP Top 10</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="Details"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-type">Google VRP</div>
+                        <h3 class="project-title">Active Bug Bounty Hunter</h3>
+                        <p class="project-desc">Actively participating in bug bounty platforms as a freelance researcher. Successfully identified and reported multiple security flaws across various applications.</p>
+                        <ul class="project-tech">
+                            <li>Burp Suite</li>
+                            <li>Manual Exploitation</li>
+                            <li>VRP</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="Bug Bounty Profile"><i class="fas fa-bug"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- GitHub Project -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-type">Open Source</div>
+                        <h3 class="project-title">cyber-recon-tool</h3>
+                        <p class="project-desc">A specialized Python-based tool designed for cybersecurity reconnaissance, handling precise active and passive information gathering tasks.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Reconnaissance</li>
+                            <li>Automation</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/NoTme3/cyber-recon-tool" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/NoTme3" target="_blank" class="btn secondary-btn">View More on GitHub</a>
+            </div>
+        </section>
+
+        <!-- Tools & Tech Stack Section -->
+        <section id="tools" class="tools section">
+            <h2 class="section-title"><span class="slash">/</span> Tech Stack & Tools</h2>
+            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="skill-card">
+                    <i class="fas fa-spider skill-icon"></i>
+                    <h3>Web Crawling & Proxy</h3>
+                    <p>Burp Suite Professional, OWASP ZAP, Caido</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal skill-icon"></i>
+                    <h3>Network & Enum</h3>
+                    <p>Nmap, Wireshark, RustScan, Masscan, Netcat</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>Exploitation</h3>
+                    <p>SQLMap, Metasploit Framework, SearchSploit, XSStrike</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Vulnerability Management</h3>
+                    <p>Qualys VMDR, Nessus Professional, OpenVAS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Scripting & Automation</h3>
+                    <p>Python (Requests, BeautifulSoup), Bash, PowerShell</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux skill-icon"></i>
+                    <h3>OS & Infrastructure</h3>
+                    <p>Kali Linux, Parrot OS, Windows Active Directory, AWS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <h2 class="section-title"><span class="slash">/</span> Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Current Position</span>
+                        <h3>Penetration Tester @ Innspark Solutions</h3>
+                        <p>Identifying vulnerabilities across web, network, and API environments. Delivering comprehensive assessments and actionable mitigation strategies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Certification</span>
+                        <h3>eJPT & Qualys Certified</h3>
+                        <p>Achieved the <strong>eLearnSecurity Junior Penetration Tester (eJPT)</strong>, <strong>Qualys Certified Specialist (VMDR)</strong>, and am actively an <strong>ISC2 Candidate</strong>.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Milestone</span>
+                        <h3>Bug Bounty Hunter</h3>
+                        <p>Active freelance researcher since Oct 2024. Successfully resolved security flaws on several platforms, including the Google VRP.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Education</span>
+                        <h3>B.Tech - Computer Science</h3>
+                        <p>Graduating with a Bachelor of Technology in CSE from <strong>Lovely Professional University (LPU)</strong> (2021-2025).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title"><span class="slash">/</span> Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's collaborate on security</h3>
+                    <p>I'm always open to discussing ethical hacking, offensive security gigs, and red teaming collaborations. Looking to secure your application or chat about infosec? Drop me a message.</p>
+                    <div class="social-links">
+                        <a href="https://in.linkedin.com/in/kailaas" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/NoTme3" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:hacker@kailaas.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">> Send_Message</button>
+                    <div id="form-message" style="display: none; margin-top: 15px; color: var(--neon-green); font-family: var(--font-mono);"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kailaas. Designed and built with <i class="fas fa-code"></i>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
