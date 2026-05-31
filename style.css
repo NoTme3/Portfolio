@@ -358,6 +358,8 @@ a:hover {
     transition: var(--transition);
     position: relative;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -410,9 +412,17 @@ a:hover {
     color: var(--text-muted);
 }
 
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .project-links {
     display: flex;
     gap: 15px;
+    margin-top: auto;
+    padding-top: 15px;
 }
 
 .project-links a {
@@ -589,13 +599,36 @@ a:hover {
 
 /* Footer */
 footer {
+    padding: 30px 0;
     text-align: center;
-    padding: 30px;
     font-family: var(--font-mono);
     color: var(--text-muted);
     font-size: 0.9rem;
     border-top: 1px solid rgba(255,255,255,0.05);
     margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--neon-green);
+    transform: translateY(-2px);
 }
 
 footer i {
