@@ -88,7 +88,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.skill-card, .project-card, .achievement-card').forEach(el => {
+document.querySelectorAll('.skill-card, .project-card, .timeline-item').forEach(el => {
     el.style.opacity = "0";
     el.style.transform = "translateY(20px)";
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
@@ -96,7 +96,7 @@ document.querySelectorAll('.skill-card, .project-card, .achievement-card').forEa
 });
 
 // Interactive dynamic card hover effects
-const cards = document.querySelectorAll('.skill-card, .project-card, .achievement-card');
+const cards = document.querySelectorAll('.skill-card, .project-card');
 
 cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
