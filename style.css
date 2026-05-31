@@ -20,19 +20,18 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    font-family: var(--font-sans);
-    line-height: 1.6;
-}
-
-body {
     background-color: #030305;
     background-image: 
         radial-gradient(circle at 10% 20%, rgba(0, 255, 65, 0.04) 0%, transparent 50%),
         radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.04) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(10, 10, 15, 0.4) 0%, #030305 100%);
     background-attachment: fixed;
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+}
+
+body {
     overflow-x: hidden;
 }
 
