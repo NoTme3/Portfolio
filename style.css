@@ -463,55 +463,89 @@ a:hover {
     flex: 1;
 }
 
-/* Achievements Timeline */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+/* Achievements Grid Layout */
+.achievements-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 15px; width: 2px; height: 100%;
-    background: rgba(0, 255, 65, 0.2);
+.achievement-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.timeline-item {
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 3rem;
-}
-
-.timeline-marker {
-    position: absolute;
-    top: 5px; left: 9px;
-    width: 14px; height: 14px;
-    border-radius: 50%;
-    background: var(--bg-color);
-    border: 2px solid var(--neon-green);
-    box-shadow: 0 0 10px var(--neon-green);
-}
-
-.timeline-date {
-    display: inline-block;
-    padding: 2px 8px;
-    background: rgba(0, 255, 65, 0.1);
-    color: var(--neon-green);
-    border-radius: 4px;
+.column-title {
+    font-size: 1.2rem;
+    color: var(--neon-cyan);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    margin-bottom: 10px;
 }
 
-.timeline-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+.column-title i {
+    color: var(--neon-green);
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+}
+
+.achievement-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--neon-green);
+    box-shadow: 0 4px 15px rgba(0, 255, 65, 0.15);
+}
+
+.achievement-card h4 {
+    font-size: 1.1rem;
     color: var(--text-main);
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-.timeline-content p {
+.achievement-card .company {
+    font-family: var(--font-mono);
+    color: var(--neon-green);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.achievement-card .desc {
     color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--neon-cyan);
+    opacity: 0.8;
+    display: block;
+    text-transform: lowercase;
+}
+
+/* Media Query adjustments for achievements section */
+@media (max-width: 992px) {
+    .achievements-columns {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
 
 /* Contact Section */
